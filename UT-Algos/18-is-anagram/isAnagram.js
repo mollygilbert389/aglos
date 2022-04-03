@@ -20,5 +20,4 @@ function altIsAnagram(str1, str2) {
   }
 }
 
-
 module.exports = { isAnagram, altIsAnagram }

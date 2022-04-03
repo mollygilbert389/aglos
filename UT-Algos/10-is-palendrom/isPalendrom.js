@@ -1,9 +1,5 @@
 function isPalendrom(string) {
-    if([...string].reverse().join("") === string) {
-        return true
-    } else {
-        return false
-    }
+    return [...string].reverse().join("") === string ? true : false;
 }
 
 module.exports = { isPalendrom };
