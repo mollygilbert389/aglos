@@ -1,16 +1,23 @@
 function characterCount(string) {
-    const tempArr = [];
     const newString = string.toLowerCase();
-    [...newString].map((letter) => {
-        console.log(tempArr[letter])
-        if([letter] && tempArr[letter].includes(letter)) {
-            return [letter] = [letter] +1
-        } else {
-            tempArr.push({ [letter]: 1})
-        }
-    })
-    console.log(tempArr)
-    return tempArr;
+    const countArr = [...newString].reduce((finalObj, letter) => {
+        finalObj[letter] = finalObj[letter] ? ++finalObj[letter] : 1;
+        return finalObj;
+    }, {});
+    return countArr
 }
 
-module.exports = { characterCount }
+function altCharacherCount(string) {
+    const newString = string.toLowerCase();
+    const finalObj = {};
+    [...newString].forEach((letter) => {
+        if (letter in finalObj) {
+            finalObj[letter]++
+        } else {
+            finalObj[letter] = 1;
+        }
+    })
+    return finalObj
+}
+
+module.exports = { characterCount, altCharacherCount }
