@@ -1,15 +1,9 @@
 function perfectSquare(num) {
-  let finalBool;
-  Array(num).map((_, idx) => {
-    const currSqurt = idx * idx
-    if(currSqurt === num) {
-      finalBool = true
-    } else if (curr > num){
-      finalBool = false
-    } else {
-      idx++
-    }
+  const boolArr = Array(num).fill().map((_, idx) => {
+    const currSqurt = (idx +1) * (idx +1)
+    return currSqurt === num ? true : false;
   })
+  const finalBool = boolArr.find((item) => item === true) ?? false;
   return finalBool;
 };
 
