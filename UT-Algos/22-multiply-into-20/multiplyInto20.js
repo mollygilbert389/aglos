@@ -1,16 +1,13 @@
 function multiplyInto20(arr) {
-  let finalBool;
-  arr.reverse().forEach((num1) => {
-    arr.forEach((num2) => {
-      if(num1 * num2 === 20) {
-        finalBool = true;
+  return arr.map((num, idx) => {
+    if(arr[idx] < arr.length) {
+      if(num * arr[idx+1] === 20) {
+        return true
       } else {
-        finalBool = false
+        return false
       }
-    })
-  })
-
-  return finalBool;
+    }
+  }).find((val) => Boolean(val)) ?? false
 }
 
 module.exports = { multiplyInto20 }
