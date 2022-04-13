@@ -20,4 +20,20 @@ function altArrayIntersection(arr1, arr2) {
   }, []).flat(2).filter((item) => Boolean(item))
 }
 
-module.exports = { arrayIntersection, altArrayIntersection }
+function alt2ArrayIntersection(arr1, arr2){
+  const finalArr = [];
+
+  arr1.forEach((item) => {
+    if(arr2.find((i) => i === item)) {
+      finalArr.push([item])
+    };
+  });
+
+  return finalArr.flat();
+};
+
+function alt3ArrayIntersection(arr1, arr2){
+  return arr1.filter((item) => arr2.includes(item));
+};
+
+module.exports = { arrayIntersection, altArrayIntersection, alt2ArrayIntersection, alt3ArrayIntersection }

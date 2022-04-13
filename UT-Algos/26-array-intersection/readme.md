@@ -6,9 +6,9 @@ In this activity, you will be writing code to create a function that takes two a
 
 * In this file you will be writing code in the body of the `arrayIntersection` function to achieve the following:
 
-  * Return a new array containing the intersection of both passed-in arrays.
+  * Return a new array that contains the intersection of both passed-in arrays.
 
-  * See the following array for an example:
+  * Refer to the following array for an example:
 
     ```js
     var arr1 = [1, 2, 3, 4];
@@ -21,7 +21,7 @@ In this activity, you will be writing code to create a function that takes two a
     [3, 4];
     ```
 
-  * See the following array for another example:
+  * Refer to the following array for another example:
 
     ```js
     var arr1 = [8, 88, 8, 90, 91, 8];
@@ -33,5 +33,3 @@ In this activity, you will be writing code to create a function that takes two a
     ```js
     [90, 8, 8];
     ```
-
-  > **Important:** You don't need to worry about the order of the elements in the returned array.
