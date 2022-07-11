@@ -15,12 +15,4 @@ function altCommonElement(arrA, arrB) {
   return finalArr
 }
 
-function anotherCommonElement(arrA, arrB) {
-  arrA.reduce((finalArr, item) => {
-    
-  }, [])
-
-  return finalArr
-}
-
 module.exports = { commonElement, altCommonElement, anotherCommonElement }
