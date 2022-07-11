@@ -15,4 +15,4 @@ function altCommonElement(arrA, arrB) {
   return finalArr
 }
 
-module.exports = { commonElement, altCommonElement, anotherCommonElement }
+module.exports = { commonElement, altCommonElement }
