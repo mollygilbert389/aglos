@@ -44,3 +44,8 @@ test("will check to see if there are valid pairs of brackets", () => {
     const str = "( [ ) } ]";
     expect(validBracketsFunc(str)).toBe(false)
 })
+
+test("will check to see if there are valid pairs of brackets", () => {
+    const str = "( { } } } )";
+    expect(validBracketsFunc(str)).toBe(false)
+})
